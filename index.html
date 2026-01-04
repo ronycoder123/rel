@@ -1,0 +1,119 @@
+<html>
+    <style>
+         .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+        }
+        .a{
+            transition-duration: 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(54,54,54);
+            border:2px solid rgb(37, 37, 37);
+            padding:10px;
+            border-radius:5px;
+        }
+        .mode{
+            transition-duration: 0.3s;
+            width:100px;
+            border-radius:10px;
+            background-color: rgb(53, 52, 52);
+            border:2px solid rgb(255, 255, 255);
+            color:white;
+            height:50px;
+        }
+        .btns{
+            transition-duration: 0.3s;
+            padding:10px;
+           border:2px solid rgb(49, 49, 173);
+            background-color: rgb(241, 238, 238);
+            color:rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .more_cont{
+            display: flex;
+            gap:5px;
+            align-items: center;
+            justify-content: center;
+        }
+        .yes{
+            display: flex;
+        }
+        .ak{
+            transition-duration: 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(54,54,54);
+            padding:10px;
+            border-radius:5px;
+            font-size:20px;
+            margin-top:-10px;
+        }
+    </style>
+    <body id="body">
+        <div class="cont">
+            <h4 class="a" id="am">Religion Distribution</h4>
+            <button class="mode" id="mode">Dark Mode</button>
+        </div>
+        <hr>
+        <div class="more_cont" id="b">
+            <a href="https://ronycoder123.github.io/Maths-project/">
+        <button class="btns" id="as2">Home</button>
+        </a>
+        <a href="https://ronycoder123.github.io/lit/">
+        <button class="btns" id="as3">Language and Literacy</button>
+        </a>
+        <a>
+        <button class="btns" id="as4">Bibliography[Digital]</button>
+        <a href="https://ronycoder123.github.io/rain/">
+        <button class="btns" id="as5">Rainfall Statistics</button>
+        </a>
+        <a href="https://ronycoder123.github.io/pop/">
+        <button class="btns" id="as">Population</button>
+        </a>
+        </div>
+        <hr>
+        <br>
+        <div class="yes">
+        <img src="Screenshot (352).png" alt="">
+        <h3 class="ak" id="so">Karnataka is a state where diversity thrives, not just in its landscapes but also in its people and their beliefs. Religion plays a significant role in shaping the culture and daily life here. Hindus make up the largest share, around 84% of the population, bringing with them a rich heritage of temples, festivals, and traditions that color the state with vibrant rituals and celebrations. Muslims form about 12.92%, contributing beautifully to Karnataka’s cultural mosaic with their mosques, culinary traditions, and festivals like Eid that bring communities together. Christians, accounting for 1.87%, and Jains at 0.72%, also add to this tapestry, maintaining their distinct places of worship, practices, and festivals. Smaller communities like Buddhists (0.16%) and Sikhs (0.05%), along with those following other religions or not stating any faith (around 0.29%), further enrich the social fabric. Together, these diverse communities make Karnataka not just a state, but a vibrant celebration of faith, coexistence, and shared culture, where every corner tells a story of harmony and tradition.</h3>
+        </div>
+        <br>
+        <hr><br>
+        <div class="yes">
+            
+            <h3 class="ak" id="sos">Ladakh, perched high in the Himalayas, is a land where religion and culture intertwine to create a unique and captivating social fabric. The majority of its population, around 46.4%, follows Buddhism, which is reflected in the serene monasteries, prayer flags fluttering in the wind, and the rhythmic chanting that fills the valleys. Hindus make up roughly 39% of the people, adding vibrant festivals, temples, and rituals to the region’s cultural landscape. Islam is practiced by about 12% of Ladakhis, contributing to the spiritual diversity through mosques and traditional Islamic customs. The remaining 2.6% of the population follows other religions, including Christianity and Sikhism, further enriching the region’s mosaic of faiths. This blend of religions not only influences daily life but also shapes the festivals, architecture, and social harmony of Ladakh, making it a truly remarkable destination for both cultural exploration and spiritual reflection</h3>
+        <img src="Screenshot (354).png" alt="">
+        </div>
+        <script>
+             let x = 0;
+document.getElementById('mode').onclick = function() {
+    x += 1;
+    if (x%2 !=0){
+        document.getElementById('so').style.color=document.getElementById('sos').style.color='white'
+    document.getElementById('body').style.backgroundColor='rgb(15,15,15)';
+    document.getElementById('as').style.backgroundColor=document.getElementById('as2').style.backgroundColor=document.getElementById('as3').style.backgroundColor=document.getElementById('as4').style.backgroundColor=document.getElementById('as5').style.backgroundColor='rgb(15,15,15)'
+document.getElementById('as').style.color=document.getElementById('as2').style.color=document.getElementById('as3').style.color=document.getElementById('as4').style.color=document.getElementById('as5').style.color='white'
+document.getElementById('am').style.border='2px solid white'
+document.getElementById('am').style.color='white'
+document.getElementById('mode').style.backgroundColor='white'
+document.getElementById('mode').style.color='black'
+document.getElementById('mode').style.border='2px solid black'
+document.getElementById('mode').textContent='Light Mode'
+}
+if (x%2==0){
+    document.getElementById('body').style.backgroundColor='white';
+    document.getElementById('as').style.backgroundColor=document.getElementById('as2').style.backgroundColor=document.getElementById('as3').style.backgroundColor=document.getElementById('as4').style.backgroundColor=document.getElementById('as5').style.backgroundColor='white'
+document.getElementById('as').style.color=document.getElementById('as2').style.color=document.getElementById('as3').style.color=document.getElementById('as4').style.color=document.getElementById('as5').style.color='black'
+document.getElementById('so').style.color=document.getElementById('sos').style.color='rgb(54,54,54)'
+document.getElementById('am').style.border='2px solid rgb(54,54,54)'
+document.getElementById('am').style.color='rgb(54,54,54)'
+document.getElementById('mode').style.backgroundColor='rgb(54,54,54)';
+document.getElementById('mode').style.border='2px solid white'
+document.getElementById('mode').textContent='Dark Mode'
+document.getElementById('mode').style.color='white'
+}
+}
+        </script>
+    </body>
+</html>
